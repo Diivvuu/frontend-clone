@@ -129,6 +129,30 @@ nav {
   scale: 0;
   top: 50%;
 }
+#page1-bottom h1 {
+  font-family: futura;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+  font-size: 3vw;
+}
+#page1-bottom > p {
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 0.8vw;
+  margin-top: 1.4vw;
+  margin-bottom: 7vw;
+}
+#bottom-line {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1vw;
+  font-size: 0.8vw;
+}
 #page2 {
   min-height: 100vh;
   width: 100%;
@@ -231,4 +255,68 @@ nav {
 }
 #third-card {
   background-color: #fff;
+}
+#moto {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.4vw;
+}
+#moto h1 {
+  font-family: futura;
+  text-transform: uppercase;
+  font-size: 53px;
+  width: 700px;
+  line-height: 53px;
+}
+#moto .para {
+  width: 370px;
+  margin-right: 9vw;
+  letter-spacing: 0.5px;
+}
+#moto .para p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+#page3 {
+  min-height: 200vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.child {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 45vw;
+}
+.child img {
+  height: 100%;
+}
+.child .child-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5vw 0; */
+}
+.child .child-info a {
+  text-decoration: none;
+  color: #000;
+  /* font-size: 0.7vw; */
+  font-weight: 100;
+}
+.item-name {
+  margin-top: 4vw;
+  font-size: 0.7vw;
+}
+.item-price {
+  margin-top: 0.6vw;
+  font-size: 0.6vw;
 }
