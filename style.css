@@ -320,3 +320,70 @@ nav {
   margin-top: 0.6vw;
   font-size: 0.6vw;
 }
+#page4 {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upper-text h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 200px;
+  font-family: futura;
+  font-size: 68px;
+  letter-spacing: -1px;
+  line-height: 68px;
+}
+#page4 button {
+  margin-top: 90px;
+  font-size: 13px;
+  font-weight: 800;
+  border: 2px solid black;
+  color: #fff;
+  background-color: #000;
+  padding: 22px 60px;
+  border-radius: 50px;
+  /* font-family: futura; */
+}
+#page4 p {
+  margin-top: 30px;
+}
+#page4 button:hover{
+  background-color: #fff;
+  color: #000;
+}
+#page5{
+  position: relative;
+  min-height: 100vh; 
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+#page5 #impact-para{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+#impact-para h2{
+  font-family: futura;
+  font-weight: 500;
+}
+#page5-images{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#page5-images img{
+  height: 90%;
+  width: 47%;
+  object-fit: cover;
+}
