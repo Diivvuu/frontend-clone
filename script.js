@@ -104,32 +104,20 @@ function loadingAnimation(){
 }
 loadingAnimation();
 
-function cursorAnimation(){
-  document.addEventListener("mousemove", function(dets){
-    gsap.t0("#cursor", {
-      left : dets.x,
-      top : dets.y,
-    })
+
+document.addEventListener("mousemove", function(dets){
+    gsap.to("#cursor", {
+      left : dets.x-80,
+      top : dets.y-75,
   })
-  document.querySelectorAll(".child").forEach(function(elem) {
-    elem.addEventListener("mouseenter", function() {
-        const cursor = document.querySelector("#cursor");
-        const bgColor = elem.getAttribute("data-color");
-
-        gsap.to(cursor, {
-            backgroundColor: bgColor,
-            transform: 'translate(-50%,-50%) scale(1)'
-        });
-        
-    });
-    elem.addEventListener("mouseleave", function() {
-        const cursor = document.querySelector("#cursor");
-
-        gsap.to(cursor, {
-            backgroundColor: 'transparent',
-            transform: 'translate(-50%,-50%) scale(0)'
-        });
-    });
 })
-}
-cursorAnimation()
+document.querySelector("#page3").addEventListener("mouseenter", function(){
+  gsap.to("#cursor", {
+  transform: 'scale(1)'   
+  })
+})
+document.querySelector("#page3").addEventListener("mouseleave", function(){
+  gsap.to("#cursor", {
+    transform : 'scale(0)'
+  })
+})
