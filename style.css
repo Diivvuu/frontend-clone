@@ -401,3 +401,68 @@ nav {
   height: auto;
   object-fit: cover;
 }
+#email {
+  margin-top: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+#email-input {
+  width: 97%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #686666b1;
+  box-sizing: border-box;
+  font-family: futura;
+  padding-bottom: 20px;
+  color: #000;
+}
+#email-input::placeholder {
+  color: #000;
+  font-size: 40px;
+}
+#email-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+#page6 {
+  min-height: 90vh;
+  width: 100vw;
+}
+#page6 #footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 200px;
+}
+#footer #connect {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  gap: 5px;
+}
+#footer #logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer #logo img {
+  height: 270px;
+  width: 270px;
+  object-fit: cover;
+}
+#footer #logo #copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer #nitty {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 50px;
+}
