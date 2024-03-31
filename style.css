@@ -353,37 +353,51 @@ nav {
 #page4 p {
   margin-top: 30px;
 }
-#page4 button:hover{
+#page4 button:hover {
   background-color: #fff;
   color: #000;
 }
-#page5{
-  position: relative;
-  min-height: 100vh; 
+#page5 {
+  height: 100vh;
   width: 100vw;
-  justify-content: center;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
-#page5 #impact-para{
+#page5 #impact-para {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-self: flex-start;
 }
-#impact-para h2{
+#page5 #impact-para h2 {
   font-family: futura;
   font-weight: 500;
+  margin-top: 1vw;
 }
-#page5-images{
-  height: 100%;
-  width: 50%;
+#page5 #impact-para p {
+  font-size: 16px;
+  margin: 1.5vw 0;
+  width: 75%;
+  /* line-height: 20px; */
+}
+#page5 #impact-para a {
+  font-size: 12px;
+  color: #000;
+  font-family: helvetica;
+  font-weight: 100;
+  /* letter-spacing: 1px; */
+}
+#page5-images {
+  width: 65%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-#page5-images img{
-  height: 90%;
-  width: 47%;
+#page5-images img {
+  width: 48%;
+  height: auto;
   object-fit: cover;
 }
